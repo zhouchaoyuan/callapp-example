@@ -60,7 +60,7 @@ const App: FC = () => {
           alert(ua);
         }}
       >
-        ua
+        userAgent
       </button>
       <button
         onClick={() => {
@@ -103,6 +103,13 @@ const App: FC = () => {
         }}
       >
         callapp-lib 唤端
+      </button>
+      <button
+        onClick={() => {
+          alert(navigator.vendor || "Unknown OEM");
+        }}
+      >
+        OEM Type
       </button>
     </div>
   );
