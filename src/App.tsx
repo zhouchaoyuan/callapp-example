@@ -105,16 +105,17 @@ const App: FC = () => {
       >
         callapp-lib 唤端
       </button>
-      {/* <button
+      <button
         onClick={() => {
-          let parser = new UAParser("user-agent"); // you need to pass the user-agent for nodejs
-          console.log(parser); // {}
-          let parserResults = parser.getResult();
-          alert(JSON.stringify(parserResults));
+          window.location.href = "mimarket://details?id=com.tencent.mm"
+          window.location.href = "samsungapps://ProductDetail/com.tencent.mm"
+          window.location.href = "appmarket://details?id=com.tencent.mm"
+          window.location.href = "oppomarket://details?packagename=com.tencent.mm"
+          window.location.href = "vivomarket://details?id=com.tencent.mm"
         }}
       >
         OEM Type
-      </button> */}
+      </button>
     </div>
   );
 };
