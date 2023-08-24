@@ -9,7 +9,6 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.20/ua-parser.min.js"></script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -29,13 +28,6 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <p id="oemInfo">Loading...</p>
-    <script>
-        const parser = new UAParser();
-        const result = parser.getResult();
-        const oemInfoElement = document.getElementById("oemInfo");
-        oemInfoElement.textContent = "UserAgent: " + JSON.stringify(result);
-    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

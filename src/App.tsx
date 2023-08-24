@@ -56,7 +56,12 @@ function evokeByTagA(uri: string): void {
 const App: FC = () => {
   return (
     <div className="App">
-      <button
+      <br></br>
+      <br></br>
+      <br></br>
+      The open button will take you to app store to install or open the Wechat app" 
+
+      {/* <button
         onClick={() => {
           alert(ua);
         }}
@@ -104,7 +109,10 @@ const App: FC = () => {
         }}
       >
         callapp-lib 唤端
-      </button>
+      </button> */}
+      <br></br>
+      <br></br>
+      <br></br>
       <button
         onClick={() => {
           window.location.href = "mimarket://details?id=com.tencent.mm"
@@ -114,7 +122,7 @@ const App: FC = () => {
           window.location.href = "vivomarket://details?id=com.tencent.mm"
         }}
       >
-        OEM Type
+        Go to App Store
       </button>
     </div>
   );
