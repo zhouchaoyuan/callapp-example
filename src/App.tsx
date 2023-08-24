@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import CallApp from 'callapp-lib';
+//import { UAParser } from 'ua-parser-js';
 import './App.css';
 
 const option = {
@@ -104,13 +105,16 @@ const App: FC = () => {
       >
         callapp-lib 唤端
       </button>
-      <button
+      {/* <button
         onClick={() => {
-          alert(navigator.vendor || "Unknown OEM");
+          let parser = new UAParser("user-agent"); // you need to pass the user-agent for nodejs
+          console.log(parser); // {}
+          let parserResults = parser.getResult();
+          alert(JSON.stringify(parserResults));
         }}
       >
         OEM Type
-      </button>
+      </button> */}
     </div>
   );
 };
