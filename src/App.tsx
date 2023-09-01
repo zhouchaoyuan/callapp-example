@@ -118,11 +118,11 @@ const App: FC = () => {
       <p>没有！</p>
       <br></br>
       <h2>Shun 年薪百万了吗？</h2>
-      <p>还没有！</p>
-
+      <p>快了吧！</p>
       <br></br>
       <h2>Jinha 年薪百万了吗？</h2>
-      <p>快了吧！</p>
+      <p>还没有！</p>
+      
       {/* <button
         onClick={() => {
           window.location.href = "mimarket://details?id=com.tencent.mm"
