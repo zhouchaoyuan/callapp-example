@@ -112,12 +112,14 @@ const App: FC = () => {
       >
         callapp-lib 唤端
       </button> */}
+      
       <br></br>
+      <h2>Jingze chen 被裁员了吗？</h2>
+      <p>没有！</p>
       <br></br>
       <h2>Shun 年薪百万了吗？</h2>
       <p>还没有！</p>
 
-      <br></br>
       <br></br>
       <h2>Jinha 年薪百万了吗？</h2>
       <p>快了吧！</p>
