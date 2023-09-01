@@ -59,7 +59,9 @@ const App: FC = () => {
       <br></br>
       <br></br>
       <br></br>
-      The open button will take you to app store to install or open the Wechat app" 
+      
+      <h2>chaozhou 被裁员了吗？</h2>
+      <p>还没有，快了吧</p>
 
       {/* <button
         onClick={() => {
@@ -113,7 +115,7 @@ const App: FC = () => {
       <br></br>
       <br></br>
       <br></br>
-      <button
+      {/* <button
         onClick={() => {
           window.location.href = "mimarket://details?id=com.tencent.mm"
           window.location.href = "samsungapps://ProductDetail/com.tencent.mm"
@@ -123,7 +125,7 @@ const App: FC = () => {
         }}
       >
         Go to App Store
-      </button>
+      </button> */}
     </div>
   );
 };
