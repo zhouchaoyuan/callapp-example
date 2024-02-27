@@ -126,6 +126,14 @@ const App: FC = () => {
         Open AppLink with A Tag
       </button>
 
+      <button
+        onClick={() => {
+          evoke('https://sa-dl.dcg-df.microsoft.com?mvc=5230684&cpsi=2e15b9d5-91e2-4773-9a99-09a580b6c91b&vm=6&r=2&ti=7593906c9d2b4d4fb21afcc691d33945&ta=sa&utm=smartqr');
+        }}
+      >
+        Open AppLink with <Iframe></Iframe>
+      </button>
+
       {/*<h2>chaozhou 被裁员了吗？</h2>
       <p>还没有，快了吧</p>
 
