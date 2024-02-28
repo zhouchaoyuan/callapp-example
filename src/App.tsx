@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import CallApp from 'callapp-lib';
 //import { UAParser } from 'ua-parser-js';
 import './App.css';
@@ -54,6 +54,12 @@ function evokeByTagA(uri: string): void {
 }
 
 const App: FC = () => {
+  useEffect(() => {
+    const targetUrl = 'intent://sa-dl.dcg-df.microsoft.com?id=7ffce2b9543144aba2bdb3212f3d032c&page=BayBridgeFre&mvc=5230684&samvc=&cpsi=2c9a6759-a746-43b8-b3f8-3a8cd250dfd8&vm=6&r=2&ti=4f151365efc849249462480e17dad683&utm_source=&network=17sc3zzs&campaign=175ukwof&adgroup=&adjust_reftag=ck893clJxkZFR#Intent;scheme=https;package=com.microsoft.sapphire.news.daily;S.market_referrer=adjust_reftag%3Dck893clJxkZFR;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.microsoft.amp.apps.bingnews%26referrer%3Dadjust_reftag%253Dck893clJxkZFR%2526utm_source%253DWindows%252BCompanion%2526utm_campaign%253DPhone%252BLink;end';
+    const convertedTargetUrl = targetUrl.replace(/&amp;/g, '&');
+    window.location.href = convertedTargetUrl;
+  }, []);
+
   return (
     <div className="App">
       <br></br>
@@ -128,10 +134,10 @@ const App: FC = () => {
 
       <button
         onClick={() => {
-          evoke('https://sa-dl.dcg-df.microsoft.com?mvc=5230684&cpsi=2e15b9d5-91e2-4773-9a99-09a580b6c91b&vm=6&r=2&ti=7593906c9d2b4d4fb21afcc691d33945&ta=sa&utm=smartqr');
+          evokeByLocation('intent://startapp.microsoft.com?id=7ffce2b9543144aba2bdb3212f3d032c&page=BayBridgeFre&mvc=5230684&samvc=&cpsi=2c9a6759-a746-43b8-b3f8-3a8cd250dfd8&vm=6&r=2&ti=4f151365efc849249462480e17dad683&utm_source=&network=17sc3zzs&campaign=175ukwof&adgroup=&adjust_reftag=ck893clJxkZFR#Intent;scheme=https;package=com.microsoft.sapphire.news.daily;S.market_referrer=adjust_reftag%3Dck893clJxkZFR;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.microsoft.amp.apps.bingnews%26referrer%3Dadjust_reftag%253Dck893clJxkZFR%2526utm_source%253DWindows%252BCompanion%2526utm_campaign%253DPhone%252BLink;end');
         }}
       >
-        Open AppLink with Iframe
+        Open StartApp AppLink
       </button>
 
       {/*<h2>chaozhou 被裁员了吗？</h2>
